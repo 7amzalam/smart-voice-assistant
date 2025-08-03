@@ -1,0 +1,99 @@
+/* Voice Assistant Extension Styles */
+
+.voice-assistant-icon-container {
+  transition: all 0.3s ease;
+}
+
+.voice-assistant-icon-container:hover {
+  transform: scale(1.05);
+}
+
+.voice-assistant-icon-container.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+}
+
+.voice-assistant-edit-button {
+  transition: all 0.2s ease;
+}
+
+.voice-assistant-edit-button:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-1px);
+}
+
+.voice-assistant-edit-dialog textarea {
+  direction: rtl;
+  text-align: right;
+}
+
+.voice-assistant-settings-panel {
+  direction: rtl;
+}
+
+.voice-assistant-settings-panel .settings-header {
+  text-align: right;
+}
+
+.voice-assistant-settings-panel .settings-description {
+  text-align: right;
+}
+
+.voice-assistant-settings-panel .form-label {
+  text-align: right;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.voice-assistant-settings-panel .shortcut-info {
+  text-align: right;
+}
+
+.voice-assistant-settings-panel .shortcut-info code {
+  direction: ltr;
+  display: inline-block;
+}
+
+.voice-assistant-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  max-width: 350px;
+  z-index: 10001;
+  direction: rtl;
+  text-align: right;
+}
+
+.voice-assistant-notification.error {
+  border-left: 4px solid #ef4444;
+}
+
+.voice-assistant-notification.success {
+  border-left: 4px solid #10b981;
+}
+
+.voice-assistant-notification.info {
+  border-left: 4px solid #3b82f6;
+}
+
+.voice-assistant-notification .notification-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.voice-assistant-notification .notification-message {
+  font-size: 14px;
+  color: #6b7280;
+}

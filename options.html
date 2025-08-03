@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إعدادات المساعد الصوتي</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      padding: 24px;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #1e293b;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 16px;
+      background-color: white;
+    }
+
+    .info-box {
+      background-color: #f1f5f9;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 24px;
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .info-box p {
+      margin: 0;
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    .info-box code {
+      background-color: #e2e8f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 12px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
+
+    .status-message {
+      text-align: center;
+      margin-top: 16px;
+      padding: 8px;
+      border-radius: 6px;
+      display: none;
+    }
+
+    .status-message.success {
+      background-color: #dcfce7;
+      color: #166534;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>إعدادات المساعد الصوتي</h1>
+
+    <div class="form-group">
+      <label for="language-select">لغة التحدث (Language)</label>
+      <select id="language-select">
+        <option value="ar-SA">العربية (Arabic)</option>
+        <option value="en-US">English (US)</option>
+        <option value="fr-FR">Français (French)</option>
+        <option value="es-ES">Español (Spanish)</option>
+        <option value="de-DE">Deutsch (German)</option>
+      </select>
+    </div>
+
+    <div class="info-box">
+      <h3>اختصار لوحة المفاتيح</h3>
+      <p>
+        لتغيير اختصار لوحة المفاتيح، انتقل إلى إعدادات المتصفح الخاص بك على:
+        <br>
+        <code>chrome://extensions/shortcuts</code>
+      </p>
+    </div>
+
+    <div class="button-container">
+      <button id="save-settings">حفظ الإعدادات</button>
+    </div>
+
+    <div id="status-message" class="status-message">
+      تم حفظ الإعدادات بنجاح
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
