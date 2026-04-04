@@ -1,6 +1,7 @@
 
 # 🎙️ المساعد الصوتي الذكي (Smart Voice Assistant)
 
+إضافة عملية ومهمة ومفيدة فعلا
 ### 🎥 شاهد الشرح الكامل للإضافة على يوتيوب
 
 [![شرح المساعد الصوتي الذكي](https://img.youtube.com/vi/jyDWQryU3h0/maxresdefault.jpg)](https://youtu.be/jyDWQryU3h0)
