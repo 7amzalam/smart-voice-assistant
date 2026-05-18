@@ -1,61 +1,54 @@
+# 🎙️ Smart Voice Assistant - V2
 
-# 🎙️ المساعد الصوتي الذكي (Smart Voice Assistant)
+**Smart Voice Assistant** is an advanced, free, and open-source browser extension that allows you to transcribe speech to text instantly and with high accuracy on any website you visit. This extension is built to be cross-browser compatible, supporting **Google Chrome**, **Firefox**, **Brave**, and all Chromium-based browsers.
 
-### 🎥 شاهد الشرح الكامل للإضافة على يوتيوب
-
-[![شرح المساعد الصوتي الذكي](https://img.youtube.com/vi/jyDWQryU3h0/maxresdefault.jpg)](https://youtu.be/jyDWQryU3h0)
-
-إضافة متصفح متقدمة لمتصفحات جوجل كروم (والمتصفحات المبنية عليه مثل Edge و Opera) تقوم بتحويل الكلام إلى نص مباشرةً في أي حقل إدخال على أي صفحة ويب، مع واجهة عائمة سهلة الاستخدام.
+![Smart Voice Assistant](icons/icon128.png)
 
 ---
 
-## ✨ المميزات الرئيسية
-
-* **📝 تحويل فوري للكلام إلى نص:** تحدث مباشرة وشاهد كلماتك تظهر في أي مربع نص تحدده.
-* **🖱️ أيقونة عائمة قابلة للسحب والتحريك:** ضع أيقونة التحكم في أي مكان يناسبك على الشاشة، وستتذكر مكانها في المرة القادمة.
-* **🎨 حالات مرئية متعددة للأيقونة:** يتغير لون الأيقونة ليعكس حالتها بوضوح:
-    * **أزرق:** خامل وجاهز للتسجيل.
-    * **أحمر مع نبض:** يقوم بالتسجيل حاليًا.
-    * **رمادي:** في وضع السكون (عند التوقف المؤقت عن الكلام).
-* **📋 نسخ تلقائي للنص إلى الحافظة:** عند إيقاف التسجيل، يتم نسخ النص المُسجَّل تلقائيًا إلى الحافظة، مما يجعله مثاليًا للمواقع التي لا تدعم الكتابة المباشرة.
-* **✏️ زر "تعديل النص":** بعد كل جلسة تسجيل، يظهر زر صغير يسمح لك بمراجعة وتعديل النص بسرعة قبل اعتماده.
-* **⚙️ لوحة إعدادات:** يمكنك اختيار لغة التحدث من قائمة واسعة من اللغات المدعومة.
-* **⌨️ دعم اختصارات لوحة المفاتيح:** يمكنك إظهار/إخفاء الأيقونة العائمة باستخدام اختصار لوحة المفاتيح (الافتراضي: `Ctrl+Shift+V`).
+## ✨ Key Features (Version 2)
+- **🚀 Dual AI Engines:**
+  - **Cloud Native Engine (Google):** Extremely fast and relies on the browser's built-in Web Speech API.
+  - **Local Engine (Whisper AI):** A local AI model that runs entirely within your browser (Offline-first), ensuring 100% privacy with no audio data sent to external servers.
+- **🌍 Multi-language Support:** The extension interface is fully bilingual (Arabic and English), and it supports transcription in various languages including Arabic, English, French, German, and Spanish.
+- **📝 Live Transcription:** The ability to write transcribed text directly into any text input or document on the web in real-time as you speak.
+- **🖱️ Smart Floating UI:** A draggable recording widget that can be placed anywhere on the screen to avoid blocking page content.
+- **📌 Seamless Controls:** Features a "Pin" button to keep the widget always visible, an "Edit" button to refine your text before submission, and customizable keyboard shortcuts.
 
 ---
 
-## 🚀 التثبيت والاستخدام (للمطورين والمستخدمين)
+## 🛠️ Installation & Setup (For Developers & Users)
 
-بما أن هذه الإضافة مفتوحة المصدر، يمكن تثبيتها يدويًا على أي متصفح مبني على Chromium.
+Built with modern **Manifest V3** standards and hybrid support, you can easily install the extension on your preferred browser:
 
-### متطلبات التشغيل
-* متصفح **Google Chrome**, **Microsoft Edge**, **Brave**, **Opera** أو أي متصفح آخر يدعم إضافات كروم.
+### 1️⃣ Installation on Google Chrome, Brave, and Chromium browsers
+1. Clone or download this repository to your local machine.
+2. Open your browser and navigate to the extensions page: `chrome://extensions/`
+3. Enable **Developer mode** in the top right corner.
+4. Click on the **Load unpacked** button.
+5. Select the extension directory (the folder containing `manifest.json`).
+6. The Voice Assistant icon will appear in your browser's toolbar, ready to use!
 
-### خطوات التثبيت
-1.  قم بتنزيل ملفات المشروع من GitHub. يمكنك الضغط على زر **Code** الأخضر ثم **Download ZIP**.
-2.  قم بفك ضغط الملف الذي نزلته في مجلد يسهل الوصول إليه.
-3.  افتح متصفح كروم واذهب إلى الرابط التالي: `chrome://extensions`
-4.  في الزاوية العلوية اليمنى من الصفحة، قم بتفعيل **"وضع المطور" (Developer mode)**.
-5.  ستظهر لك أزرار جديدة. اضغط على زر **"Load unpacked" (تحميل إضافة تم فك حزمتها)**.
-6.  اختر المجلد الذي قمت بفك ضغط ملفات الإضافة فيه.
-7.  ستظهر الإضافة الآن في قائمة إضافاتك وجاهزة للاستخدام!
-
-### كيفية الاستخدام
-* **إظهار/إخفاء الأيقونة العائمة:** اضغط على أيقونة الإضافة في شريط أدوات المتصفح (في الأعلى).
-* **بدء/إيقاف التسجيل:** قم بنقرة واحدة على الأيقونة العائمة لبدء التسجيل، ونقرة أخرى لإيقافه.
-* **الوصول إلى الإعدادات:**
-    * **الطريقة الأولى:** عندما تكون الأيقونة العائمة ظاهرة على الشاشة، اضغط على أيقونة الإضافة في شريط الأدوات لفتح لوحة الإعدادات.
-    * **الطريقة الثانية:** انقر بزر الماوس الأيمن على أيقونة الإضافة في شريط الأدوات واختر "Options" أو "الإعدادات".
-* **تغيير اختصار لوحة المفاتيح:** اذهب إلى `chrome://extensions/shortcuts` لتخصيص الاختصار كما تريد.
+### 2️⃣ Installation on Mozilla Firefox
+1. Open Firefox and navigate to: `about:debugging`
+2. From the left sidebar, click on **This Firefox**.
+3. Click on the **Load Temporary Add-on...** button.
+4. Browse your files and select the `manifest.json` file inside the extension folder.
+5. The extension will be loaded temporarily and the icon will appear in the Firefox toolbar.
 
 ---
 
-## 🛠️ التقنيات المستخدمة
-* JavaScript (Web Speech API)
-* HTML5
-* CSS3
+## ⚙️ Tech Stack
+- **Manifest V3:** The modern and secure standard for browser extensions.
+- **Vanilla JavaScript:** Clean, robust, and fast code without heavy UI frameworks (Content Scripts).
+- **Web Speech API:** For lightning-fast, native voice recognition.
+- **Transformers.js:** To run the local `Whisper AI` model completely inside the browser via WebAssembly, requiring no backend servers.
+- **Shadow DOM:** Ensures the extension's UI is completely isolated, preventing CSS conflicts with the websites you visit.
 
 ---
 
-## 📄 الترخيص
-هذا المشروع مرخص تحت رخصة **MIT License**. هذا يعني أنك حر في استخدام الكود وتعديله ومشاركته كما تشاء.
+## 🤝 Contributing
+Contributions are always welcome! If you have an idea for a new feature, or if you find a bug, please feel free to open an **Issue** or submit a **Pull Request**. Our goal is to make voice dictation on the web better and more accessible for everyone.
+
+---
+*Developed with passion as an Open Source extension 🤍*
